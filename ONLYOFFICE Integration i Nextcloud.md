@@ -52,7 +52,7 @@ sudo systemctl status ds-*
 
 Tilgå Nextcloud.
 Vælg "Udvalgte Apps".
-Find ONLYOFFICE.
+Find "ONLYOFFICE".
 Download og aktivér ONLYOFFICE.
 Vælg "Systemindstillinger".
 Vælg "ONLYOFFICE".
