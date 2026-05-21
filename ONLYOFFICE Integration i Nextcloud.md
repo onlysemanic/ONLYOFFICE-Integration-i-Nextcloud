@@ -4,7 +4,7 @@ Følg denne vejledning for at integrere ONLYOFFICE i Nextcloud
 
 ---
 
-## 1. Tilgå local.json-filen
+## 1. Tilgå local.json-filen:
 
 ```bash
 sudo nano /etc/onlyoffice/documentserver/local.json
@@ -12,9 +12,18 @@ sudo nano /etc/onlyoffice/documentserver/local.json
 
 ---
 
-## 2. Generer en hemmelig nøgle til secret.browser.string og sæt nøglen ind
+## 2. Generer en hemmelig nøgle til secret.browser.string:
 
 ```bash
+      "secret": {
+        "browser": {
+          "string": "<nøgle>"
+      "secret": {
+        "browser": {
+          "string": "<nøgle>"
+      "secret": {
+        "browser": {
+          "string": "<nøgle>"
       "secret": {
         "browser": {
           "string": "<nøgle>"
@@ -22,7 +31,7 @@ sudo nano /etc/onlyoffice/documentserver/local.json
 
 ---
 
-## 3. Genstart ds-converter og ds-docservice
+## 3. Genstart ds-converter og ds-docservice:
 
 ```bash
 sudo systemctl restart ds-docservice 
@@ -41,7 +50,14 @@ sudo systemctl status ds-*
 
 ## 5. Åben Nextcloud og integrer ONLYOFFICE
 
-Tilgå Nextcloud og download ONLYOFFICE i Apps. Gå ind på Nextcloud og ændr følgende indstillinger:
+Tilgå Nextcloud.
+Vælg "Udvalgte Apps".
+Find ONLYOFFICE.
+Download og aktivér ONLYOFFICE.
+Vælg "Systemindstillinger".
+Vælg "ONLYOFFICE".
 
-ONLYOFFICE Docs-adresse: Her tilføjer man ONLYOFFICE-ip'en.
-Hemmelig nøgle: "<nøgle>"
+Ændr følgende:
+
+ONLYOFFICE Docs-adresse: Her tilføjes ONLYOFFICE-ip'en.
+Hemmelig nøgle: Her tilføjes nøglen.
