@@ -18,14 +18,11 @@ sudo nano /etc/onlyoffice/documentserver/local.json
       "secret": {
         "browser": {
           "string": "<nøgle>"
-      "secret": {
-        "browser": {
+        "inbox": {
           "string": "<nøgle>"
-      "secret": {
-        "browser": {
+        "outbox": {
           "string": "<nøgle>"
-      "secret": {
-        "browser": {
+        "session": {
           "string": "<nøgle>"
 ```
 
