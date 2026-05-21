@@ -36,3 +36,12 @@ sudo systemctl restart ds-converter
 ```bash
 sudo systemctl status ds-*
 ```
+
+---
+
+## 5. Åben Nextcloud og integrer ONLYOFFICE
+
+Tilgå Nextcloud på http://<ip> og download ONLYOFFICE i Apps. Gå ind på Nextcloud og ændr følgende indstillinger:
+
+ONLYOFFICE Docs-adresse: http://<onlyoffice-ip>/
+Hemmelig nøgle: "<nøgle>"
